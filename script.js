@@ -32,4 +32,11 @@ if (circle.y + circle.radius > canvas.height || circle.y - circle.radius < 0) {
 rewuestAnimationFrame(update);
 }
 
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowUp') circle.y -= 10;
+  if (event.key === 'ArrowDown') circle.y += 10;
+  if (event.key === 'ArrowLeft') circle.x -= 10;
+  if (event.key === 'ArrowRight') circle.x += 10;
+});
+
 update();
