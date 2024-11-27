@@ -1,16 +1,3 @@
-function drawCircle(ctx, x, y, radius, color) {
-  ctx.beginPath();
-  ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-  ctx.fillStyle = color;
-  ctx.fill();
-  ctx.closePath();
-}
-
-function update() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  drawCircle(ctx, 100, 100, 50, 'blue');
-}
-
 const canvas = document.getElementById('gameCanvas')
 const ctx = canvas.getContext('2d')
 
